@@ -2,7 +2,7 @@
 function update(){
 	return new Promise(resolve => {
 		setTimeout(()=>{
-			resolve("Hello, World!");
+			resolve("Hello, world!");
 		},1000)
 	})
 }
