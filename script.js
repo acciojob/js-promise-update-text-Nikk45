@@ -1,8 +1,13 @@
 //your JS code here. If required.
 function update(){
 	return new Promise(resolve => {
-		resolve("Hello, World!");
-	}, 1000);
+		setTimeout(()=>{
+			resolve("Hello, World!");
+		},1000)
+	})
 }
 
-update();
+let val = update().then((res) => {
+	let div = document.getElementById("output");
+	div.textContent= res;
+})
